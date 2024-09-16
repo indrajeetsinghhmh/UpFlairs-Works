@@ -1,8 +1,8 @@
 # Car Price Predictor
 
-Project link: https://car-price-price.herokuapp.com
 
-<img src="https://github.com/rajtilakls2510/car_price_predictor/blob/master/demo.png">
+
+<img src="https://i.pinimg.com/564x/8b/37/c6/8b37c6ff0e943508b58723bb5eca0e57.jpg">
 
 
 
@@ -10,7 +10,7 @@ Project link: https://car-price-price.herokuapp.com
 
 This project aims to predict the Price of an used Car by taking it's Company name, it's Model name, Year of Purchase, and other parameters.
 
-<img src="https://github.com/rajtilakls2510/car_price_predictor/blob/master/predict.png">
+<img src="https://miro.medium.com/v2/resize:fit:1400/1*hZn1cA0drtsQkwN_vKgRWQ.jpeg">
 
 ## How to use?
 
@@ -37,13 +37,13 @@ And you are good to go.
 ## How this project does?
 
 1. First of all the data was scraped from Quikr.com (https://quikr.com) 
-Link for data: https://github.com/rajtilakls2510/car_price_predictor/blob/master/quikr_car.csv
+Link for data: https://github.com/indrajeetsinghhmh/UpFlairs-Works/Car_Price_Prediction/quikr_car.csv
 
 2. The data was cleaned (it was super unclean :( ) and analysed.
 
 3. Then a Linear Regression model was built on top of it which had 0.92 R2_score.
 
-Link for notebook: https://github.com/rajtilakls2510/car_price_predictor/blob/master/Quikr%20Analysis.ipynb
+Link for notebook: https://github.com/indrajeetsinghhmh/UpFlairs-Works/Car_Price_Prediction/Quikr%20Analysis.ipynb
 
 4. This project was given the form of an website built on Flask where we used the Linear Regression model to perform predictions.
 
