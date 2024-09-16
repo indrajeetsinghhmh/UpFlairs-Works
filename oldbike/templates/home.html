@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Bikes Price Prediction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d7bdf0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+        #cls {
+            background-color: #caade7;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        #main_h {
+            margin-bottom: 20px;
+            color: #504e4d;
+        }
+        #par {
+            margin: 10px 0;
+            color: #504e4d;
+        }
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #6a1b9a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4a148c;
+        }
+        #src {
+            display: block;
+            margin-top: 20px;
+            color: #6a1b9a;
+            text-decoration: none;
+        }
+        #src:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="cls">
+        <form action="{{ url_for('predict') }}" method='post' id="formm">
+            <h2 id="main_h">Old Bikes Price Prediction 😊</h2>
+            <p id="par"><b>Select your bike</b></p>
+            <select name="brand_name" id="fifth" required="required">
+                <option value="2">Royal Enfield</option>
+                <option value="7">KTM</option>
+                <option value="1">Bajaj</option>
+                <option value="9">Harley-Davidson</option>
+                <option value="5">Yamaha</option>
+                <option value="4">Honda</option>
+                <option value="8">Suzuki</option>
+                <option value="6">TVS</option>
+                <option value="10">Kawasaki</option>
+                <option value="11">Hyosung</option>
+                <option value="13">Benelli</option>
+                <option value="12">Mahindra</option>
+                <option value="14">Triumph</option>
+                <option value="15">Ducati</option>
+                <option value="16">BMW</option>
+            </select>
+            <p id="par"><b>What kms.. driven bike</b></p>
+            <input name="Kms_Driven" type="number" id="first" required="required">
+            <p id="par"><b>How many owner used this bike</b></p>
+            <input name="owner" type="number" id="second" required="required">
+            <p id="par"><b>How many years used this bike</b></p>
+            <input type="number" name="age" id="third" required="required">
+            <p id="par"><b>What the power of bike or CC power</b></p>
+            <input type="number" name="power" id="forth" required="required">
+            <button type="submit" id="btn">CLICK ME</button>
+            <h3 id="pred">Bike 🏍 price will be around 👉 {{ prediction_text }}</h3>
+        </form>
+        <a href="https://github.com/indrajeetsinghhmh" id="src">GET SOURCE CODE</a>
+    </div>
+</body>
+</html>
